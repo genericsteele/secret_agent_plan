@@ -1,17 +1,16 @@
+default: &default
+  adapter: sqlite3
+  pool: 5
+  timeout: 5000
+
 development:
-  adapter: postgresql
-  database: secret_agent_plan_development
-  host: localhost
+  <<: *default
+  database: db/development.sqlite3
 
 test:
-  adapter: postgresql
-  database: secret_agent_plan_test
-  host: localhost
+  <<: *default
+  database: db/test.sqlite3
 
 production:
-  adapter: postgresql
-  encoding: unicode
-  database: secret_agent_plan_production
-  pool: 5
-  username: secret_agent_plan
-  password:
+  <<: *default
+  database: db/production.sqlite3

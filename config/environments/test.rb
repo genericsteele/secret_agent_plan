@@ -33,4 +33,7 @@ SecretAgentPlan::Application.configure do
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
+
+  # Ignore i18n local enforcement
+  I18n.enforce_available_locales = false
 end

@@ -1,4 +1,6 @@
 SecretAgentPlan::Application.routes.draw do
+  resources :agents
+  resources :missions
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
