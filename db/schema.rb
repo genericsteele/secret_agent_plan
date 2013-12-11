@@ -11,6 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20140302014933) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "agents", force: true do |t|
+    t.string   "first_name"
+    t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "last_name"
+    t.string   "alias_name"
+  end
+
+  create_table "missions", force: true do |t|
+    t.string   "code_name"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "status",      default: "pending"
+    t.integer  "agent_id"
+  end
+
+  add_index "missions", ["code_name"], name: "index_missions_on_code_name", unique: true, using: :btree
 
 end

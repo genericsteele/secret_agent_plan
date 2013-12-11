@@ -1,0 +1,11 @@
+thunderball:
+  code_name: Operation Thunderball
+  description: Recover the atomic bombs stolen by SPECTRE.
+  status: active
+  agent: bond
+
+argo:
+  code_name: Argo
+  description: Extract hostages in hiding from Iran.
+  status: completed
+  agent: mendez

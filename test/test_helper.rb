@@ -18,3 +18,10 @@ class ActiveSupport::TestCase
     end
   end
 end
+
+class Minitest::Assertion
+  alias_method :old_location, :location
+  def location
+    old_location.sub("#{Rails.root.to_s}/", '')
+  end
+end
