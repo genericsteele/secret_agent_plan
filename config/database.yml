@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  database: secret_agent_plan_development
+  host: localhost
+
+test:
+  adapter: postgresql
+  database: secret_agent_plan_test
+  host: localhost
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: secret_agent_plan_production
+  pool: 5
+  username: secret_agent_plan
+  password:
