@@ -1,3 +1,7 @@
+# _What Do I Test?_
+
+This is a practice exercise for folks who've read the Rails testing book, _["What Do I Test?"](https://whatdoitest.com)_. It helps if you've read the book, but feel free to write some tests and send me a pull request even if haven't.
+
 ## Add Some Tests
 
 Your mission (should you chose to accept it), is to make the tests in this app pass.
