@@ -1,0 +1,11 @@
+honeypot:
+  code_name: Honeypot
+  description: Seduce an enemy agent to recover incriminating video footage. Enemy agent is a man.
+  status: completed
+  agent: archer
+
+pipeline_fever:
+  code_name: Pipeline Fever
+  description: Stop an eco-terrorist from destroying a pipeline in the Louisiana bayou.
+  status: active
+  agent: archer
